@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="js1.css">
+        <script type="text/JavaScript">
+            function usd() {
+                a = eval(kalkulator.dari.value);
+                b = 14100;
+                c = a * b;
+                kalkulator.hasil.value=c;
+            }
+            function usg() {
+                a = eval(kalkulator.dari.value);
+                b = 10477;
+                c = a * b;
+                kalkulator.hasil.value=c;
+            }
+            function kosong() {
+                kalkulator.dari.focus();
+                kalkulator.dari.value="";
+                kalkulator.hasil.value="";
+            
+            }
+        </script>
+        <script src="javascript1.js"></script>
+        
+    </head>
+    <body>
+        <h1>Kalkulator KURS</h1>
+        <form id="kalkulator">
+                <input type="text" id="dari" value="" onchange="kurs()">
+                <label>Mata uang : </label>
+                <select id="matauang" onchange="kurs()">
+                    <option>--Pilih--</option>
+                    <option value="dollar" id="dollar">Dollar US</option>
+                    <option value="dollarsg" id="dollarsg">Dollar Singapore</option>
+                    <option value="rm" id="rm">Ringgit Malaysia</option>
+                    <option value="yenj" id="yenj">Yen Jepang</option>
+                    <option value="euro" id="euro">Euro</option>
+                    <option value="riyal" id="riyal">Riyal Arab Saudi</option>
+                </select><br>
+                Rp.<p id="hasil"></p>
+        </form>
+    </body>
+</html>
