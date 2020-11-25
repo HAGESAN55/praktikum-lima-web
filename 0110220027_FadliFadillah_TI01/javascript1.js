@@ -1,12 +1,12 @@
 function kurs(){
     let Nilai = Number(document.getElementById("dari").value);
     let pilihan = document.getElementById("matauang").value;
-    let usd = Number("14100");
-    let usg = Number("10477");
-    let myr = Number("3416");
-    let jpy = Number("134");
-    let eur = Number("16656");
-    let riy = Number("3741");
+    let usd = Number("9915");
+    let usg = Number("13472");
+    let myr = Number("874");
+    let jpy = Number("120");
+    let eur = Number("15888");
+    let riy = Number("3592");
     if (isNaN(Nilai)) {
         alert("Isilah Menggunakan angka!");
     }
